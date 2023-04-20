@@ -1,0 +1,118 @@
+{
+  "staffs": [
+    {
+      "id": "1",
+      "image": "/assets/staffs/staff1.jpg",
+      "name": "Éric",
+      "job": "Propiétaire et chef",
+      "devise": "C'est pas parce qu'on a rien à dire qu'il faut fermer sa gueule - Michel Audiard"
+    },
+    {
+      "id": "2",
+      "image": "/assets/staffs/staff2.jpg",
+      "name": "Caroline",
+      "job": "second de cuisine",
+      "devise": "Quand on voit tous ces top models anorexiques et qu'on sait ce qu'on les paye on se dit que ça fait cher le kilo - Philippe Geluck"
+    },
+    {
+      "id": "3",
+      "image": "/assets/staffs/staff3.jpg",
+      "name": "Antoine",
+      "job": "Serveur",
+      "devise": "Pourquoi essayer de faire semblant d'avoir l'air de travailler ? C'est de la fatigue inutile! - Pierre Dac"
+    },
+    {
+      "id": "4",
+      "image": "/assets/staffs/staff4.jpg",
+      "name": "Élodie",
+      "job": "Serveuse et sommelière",
+      "devise": "Dieu n'avait fait que l'eau, mais l'Homme a fait le vin - Victor Hugo"
+    },
+    {
+      "id": "5",
+      "image": "/assets/staffs/staff5.jpg",
+      "name": "Jeanne",
+      "job": "Serveuse",
+      "devise": "Les miroirs feraient bien de réfléchir avant de renvoyer les images - Jean Cocteau"
+    },
+    {
+      "id": "6",
+      "image": "/assets/staffs/staff6.jpg",
+      "name": "Marie",
+      "job": "Sait tout faire de la cuisine au service",
+      "devise": "La connaissance s'acquiert par l'expérience, tout le reste n'est que de l'information - Albert Einstein"
+    },
+    {
+      "id": "7",
+      "image": "/assets/staffs/staff7.jpg",
+      "name": "Nathalie, Jerry et Camille",
+      "job": "Nos 3 animateurs",
+      "devise": "Aucun d’entre nous n’est plus intelligent que l’ensemble d’entre nous - Kenneth Blanchard"
+    },
+    {
+      "id": "8",
+      "image": "/assets/staffs/staff8.jpg",
+      "name": "Pic, Puce et Galice",
+      "job": "Gestionnaires de déchets",
+      "devise": "Est-ce l'oeuf le père de la poule ou la poule la mère de l'oeuf? - Raymond Devos"
+    }
+  ],
+  "products": [
+    {
+      "id": "21",
+      "image": "/assets/products/product1.jpg",
+      "name": "Axel",
+      "product": "Producteur de fromages de chèvre",
+      "city": "Trélivan (22)"
+    },
+    {
+      "id": "22",
+      "image": "/assets/products/product2.jpg",
+      "name": "Dany",
+      "product": "Maraicher",
+      "city": "Évran (22)"
+    },
+    {
+      "id": "23",
+      "image": "/assets/products/product3.jpg",
+      "name": "Dominique et Delphine",
+      "product": "Poissonniers",
+      "city": "Broons (22)"
+    },
+    {
+      "id": "24",
+      "image": "/assets/products/product4.jpg",
+      "name": "Karine",
+      "product": "Éleveuse de bovins charolais et de porcs",
+      "city": "Tinténiac (35)"
+    },
+    {
+      "id": "25",
+      "image": "/assets/products/product5.jpg",
+      "name": "John",
+      "product": "Fromager, crémier",
+      "city": "Dinan (22)"
+    },
+    {
+      "id": "26",
+      "image": "/assets/products/product6.jpg",
+      "name": "Cellie",
+      "product": "Fruits et légumes bio",
+      "city": "Lanvallay (22)"
+    },
+    {
+      "id": "27",
+      "image": "/assets/products/product7.jpg",
+      "name": "Henrik",
+      "product": "Éleveur de volailles",
+      "city": "Taden (22)"
+    },
+    {
+      "id": "28",
+      "image": "/assets/products/product8.jpg",
+      "name": "Stéphanie",
+      "product": "caviste",
+      "city": "Quévert (22)"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+body {
+  background-color: rgba(44, 44, 44, 0.8);
+}
+main {
+  max-width: 900px;
+  padding: 1rem;
+  background-color: rgba(44, 44, 44, 0.95);
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a {
+  color: red;
+}
+h1 {
+  text-decoration: underline red;
+}
+h2 {
+  text-decoration: underline dotted pink;
+}
+img {
+  float: right;
+  /* max-width: 300px; */
+  width: 40%;
+  margin: 1rem;
+}

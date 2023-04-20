@@ -1,0 +1,120 @@
+{
+  "entrees": [
+    {
+      "id": "11",
+      "image": "/assets/entrees/entree1.jpg",
+      "name": "Salade gourmande",
+      "description": "Salade verte et crudités accompagnées d'une figue rotie et fromages de chèvres frais",
+      "vege": "Végétarien"
+    },
+    {
+      "id": "12",
+      "image": "/assets/entrees/entree2.jpg",
+      "name": "Délice de terre et mer",
+      "description": "Craquer au sarazin, fromage frais à l'ail des ours et saumon fumé",
+      "vege": " "
+    },
+    {
+      "id": "13",
+      "image": "/assets/entrees/entree3.jpg",
+      "name": "Du cochon et encore du cochon!",
+      "description": "Charcuteries locales variées accompagnées de salade pour se donner bonne consience",
+      "vege": " "
+    },
+    {
+      "id": "14",
+      "image": "/assets/entrees/entree4.jpg",
+      "name": "Le sud ouest dans mon assiette",
+      "description": "Foie gras mi-cuit, tranche de brioche toastée, décoré de grenade",
+      "vege": " "
+    },
+    {
+      "id": "15",
+      "image": "/assets/entrees/entree5.jpg",
+      "name": "Sucré salé de la mer",
+      "description": "Brochettes de crevettes et noix de st Jacques poëlées sur leur coulis de mangue",
+      "vege": " "
+    }
+  ],
+  "plats": [
+    {
+      "id": "21",
+      "image": "/assets/plats/plat1.jpg",
+      "name": "Saumon du chef",
+      "description": "Pavé de saumon cuit à l'unilatéral, riz à l'encre de seiche, crevettes et asperges",
+      "vege": " "
+    },
+    {
+      "id": "22",
+      "image": "/assets/plats/plat2.jpg",
+      "name": "Le porc qui riz",
+      "description": "Brochettes de porc caramélisée avec son rizotto aux petits légumes locaux",
+      "vege": " "
+    },
+    {
+      "id": "23",
+      "image": "/assets/plats/plat3.jpg",
+      "name": "Méli mélo de légumes",
+      "description": "Cassolette de légumes du moment, cuisson 'secret du chef'",
+      "vege": "Végétarien, Vegan"
+    },
+    {
+      "id": "24",
+      "image": "/assets/plats/plat4.jpg",
+      "name": "I love beef!",
+      "description": "Pavé de rumsteack grillé et ses légumes confits",
+      "vege": " "
+    },
+    {
+      "id": "25",
+      "image": "/assets/plats/plat5.jpg",
+      "name": "Dans ma basse cour il y a:",
+      "description": "Blanquette de poulet et pommes de terre sarladaises",
+      "vege": " "
+    }
+  ],
+  "desserts": [
+    {
+      "id": "31",
+      "image": "/assets/desserts/dessert1.jpg",
+      "name": "Sommets glacés",
+      "description": "Glace noisettes et ses fruits givrés",
+      "vege": "Végétarien"
+    },
+    {
+      "id": "32",
+      "image": "/assets/desserts/dessert2.jpg",
+      "name": "En rouge et blanc",
+      "description": "Duo cheesecake et gelée de framboises",
+      "vege": "Végétarien"
+    },
+    {
+      "id": "33",
+      "image": "/assets/desserts/dessert3.jpg",
+      "name": "Carpaccio de fruits",
+      "description": "Mandarines, kiwis et bananes dans leur lait de coco",
+      "vege": "Végétarien, Vegan"
+    },
+    {
+      "id": "34",
+      "image": "/assets/desserts/dessert4.jpg",
+      "name": "Humm un gateau!",
+      "description": "Tourte tiède oranges et noix",
+      "vege": "Végétarien"
+    },
+    {
+      "id": "35",
+      "image": "/assets/desserts/dessert4.jpg",
+      "name": "Une petite mousse?",
+      "description": "Entre deux couches de mousse au chocolat noir intense se cache un délicieux insert de lemon curd",
+      "vege": "Végétarien"
+    },
+    {
+      "id": "36",
+      "image": "/assets/desserts/dessert6.jpg",
+      "name": "Elle était verte ma prairie",
+      "description": "Assiette de fromages de nos terroirs ",
+      "vege": "Végétarien"
+    }
+  ]
+}
