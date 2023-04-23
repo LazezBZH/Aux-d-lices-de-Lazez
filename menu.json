@@ -3,14 +3,14 @@
     {
       "id": "11",
       "image": "/assets/entrees/entree1.jpg",
-      "name": "Salade gourmande",
+      "name": "Salade de monsieur Seguin",
       "description": "Salade verte et crudités accompagnées d'une figue rotie et fromages de chèvres frais",
       "vege": "Végétarien"
     },
     {
       "id": "12",
       "image": "/assets/entrees/entree2.jpg",
-      "name": "Délice de terre et mer",
+      "name": "Délice entre terre et mer",
       "description": "Craquer au sarazin, fromage frais à l'ail des ours et saumon fumé",
       "vege": " "
     },
@@ -24,14 +24,14 @@
     {
       "id": "14",
       "image": "/assets/entrees/entree4.jpg",
-      "name": "Le sud ouest dans mon assiette",
+      "name": "Le bonheur est dans le pré",
       "description": "Foie gras mi-cuit, tranche de brioche toastée, décoré de grenade",
       "vege": " "
     },
     {
       "id": "15",
       "image": "/assets/entrees/entree5.jpg",
-      "name": "Sucré salé de la mer",
+      "name": "Sucré comme la mer",
       "description": "Brochettes de crevettes et noix de st Jacques poëlées sur leur coulis de mangue",
       "vege": " "
     }
@@ -40,8 +40,8 @@
     {
       "id": "21",
       "image": "/assets/plats/plat1.jpg",
-      "name": "Saumon du chef",
-      "description": "Pavé de saumon cuit à l'unilatéral, riz à l'encre de seiche, crevettes et asperges",
+      "name": "Le saumon jette l'encre",
+      "description": "Pavé de saumon cuit à l'unilatérale, riz à l'encre de seiche, crevettes et asperges",
       "vege": " "
     },
     {

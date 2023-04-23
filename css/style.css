@@ -9,24 +9,17 @@
   color: white;
   font-family: "Alegreya Sans", sans-serif;
 }
-/* html {
-  background-color: wheat;
-} */
+
 body {
-  /* max-width: 1400px; */
   margin: auto;
 }
 header {
   width: 100vw;
-  /* max-width: 1400px; */
   height: auto;
-
   position: fixed;
   top: 0%;
-
   z-index: 50;
-  background-color: rgba(44, 44, 44, 0.95);
-
+  background-color: #2c2c2cf2;
   display: flex;
   color: white;
 }
@@ -81,76 +74,44 @@ nav a.active {
   border-radius: 10px;
   box-shadow: 2px 3px 3px rgba(177, 130, 44, 0.4);
 }
-/* sections */
-/* .home {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-.events {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-}
-.menu {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.staff {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.products {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.contact {
-  background-color: rgba(0, 0, 0, 0.2);
-} */
+
 .home {
-  /* background-color: rgba(44, 44, 44, 0.95); */
   background-image: url(/assets/bg/bg1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .events {
-  /* background-color: rgba(44, 44, 44, 0.9); */
   background-image: url(/assets/bg/bg2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 150vh;
 }
 .menu {
-  /* background-color: rgba(44, 44, 44, 0.85); */
   background-image: url(/assets/bg/bg3.jpg);
-  /* background-size: cover;
-  background-repeat: no-repeat; */
-  /* background-size: 50%; */
   background-size: contain;
-  /* background-repeat: no-repeat; */
   min-height: 300vh;
 }
 .staffs {
-  background-color: rgba(44, 44, 44, 0.8);
   background-image: url(/assets/bg/bg4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .products {
-  background-color: rgba(44, 44, 44, 0.75);
   background-image: url(/assets/bg/bg5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .contact {
-  background-color: rgba(44, 44, 44, 0.7);
   background-image: url(/assets/bg/bg6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-size: 50%;
-  background-position: right 50% bottom 0%; */
 }
 .parallax {
   width: 100%;
   height: 100vh;
   padding-top: 17vw;
   background-attachment: fixed;
-  /* background-size: cover;
-  background-repeat: no-repeat; */
 }
 
 /* accueil */
@@ -382,7 +343,7 @@ nav a.active {
   padding-bottom: 2rem;
 }
 .events-list li {
-  list-style-image: url("/assets/icones/icones/agenda.svg");
+  list-style-image: url("/assets/icones/agenda.svg");
   padding-left: 2rem;
   position: relative;
   margin-bottom: 1.5rem;
@@ -527,6 +488,7 @@ nav a.active {
   transform: scale(1.05);
   z-index: 99;
   border-radius: 15px;
+  z-index: 1;
 }
 .vege {
   color: red;
@@ -609,6 +571,7 @@ nav a.active {
   transform: scale(1.05);
   z-index: 99;
   border-radius: 15px;
+  z-index: 1;
 }
 
 /* producteurs */
@@ -662,6 +625,7 @@ nav a.active {
   transform: scale(1.05);
   z-index: 99;
   border-radius: 15px;
+  z-index: 1;
 }
 /* contact */
 .header-contact {
@@ -707,14 +671,35 @@ nav a.active {
 .infos-contact img {
   width: 25%;
 }
+.infos-contact img:hover {
+  opacity: 0.9;
+}
 .infos-contact iframe {
   width: 25%;
 }
 /* footer */
 footer {
   background-color: rgba(44, 44, 44, 0.95);
-  padding: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: start;
 }
 footer a {
   color: red;
+}
+/* réservation */
+/* .home-resa {
+  background-color: transparent;
+} */
+.home button {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 99;
+}
+.home-resa img {
+  max-width: 100px;
+  border-radius: 10px;
 }

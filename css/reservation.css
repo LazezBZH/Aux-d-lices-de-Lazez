@@ -1,0 +1,86 @@
+dialog {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.7);
+  margin: auto;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  z-index: 999;
+  color: black;
+}
+dialog input,
+dialog option,
+dialog button,
+dialog label,
+dialog select,
+dialog textarea {
+  color: black;
+}
+form {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: wheat;
+  padding: 2rem;
+  border-radius: 15px;
+}
+.output-div,
+.output-container {
+  width: 0;
+  height: 0;
+}
+.output-div_reveal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.7);
+  margin: auto;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  z-index: 999;
+  color: black;
+}
+
+.output-container_reveal {
+  width: auto;
+  min-height: 50vh;
+  border-radius: 5px;
+  padding: 5rem;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: wheat;
+  display: flex;
+  align-items: center;
+}
+output {
+  color: black;
+  font-size: 1.5rem;
+}
+.close-form,
+.close-output {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close-form img,
+.close-output img {
+  width: 2rem;
+}
+label {
+  display: flex;
+}
+#resaBtn {
+  padding: 0.3rem;
+  background-color: black;
+  color: wheat;
+}

@@ -85,6 +85,7 @@ const toggleLinks5 = function (entries) {
 };
 const toggleLinks6 = function (entries) {
   const link6 = document.querySelector("#link-6");
+  let homeBtn = document.querySelector(".home button");
 
   entries.forEach((entry) => {
     if (entry.intersectionRatio > ratio) {
@@ -93,6 +94,7 @@ const toggleLinks6 = function (entries) {
         link.classList.remove("active");
       });
       link6.classList.add("active");
+      // homeBtn.style.top = "60%";
     }
   });
   //   console.log(toggleLinks6);

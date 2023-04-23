@@ -7,6 +7,9 @@
     <title>Aux délices de Lazez</title>
 
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/reservation.css"/>
+
+    
 </head>
 <body>
     <header>
@@ -32,7 +35,7 @@
         <div class="home-container">
             <img class="dinan1" src="./assets/images/divers/dinan.jpg" alt="">
             <p>En plein centre de Dinan, cité médiévale pleine de charme dans les Côtes d'Armor, venez découvrir notre restaurant et profiter d'une de ses nombreuses soirées à thème.</p>
-            <p>Fondé en 1902 par l'ancêtre du propriétaire (et chef) actuel, il est depuis toujours resté dans la famille, passant de père ou mère en fils ou fille. 
+            <p>Fondé en 1902 par Lazez, ancêtre du propriétaire (et chef) actuel, il est depuis toujours resté dans la famille, passant de père ou mère en fils ou fille. 
                 Nous souhaitons que nos clients se sentent chez nous comme chez eux.</p>
             <img class="dinan2" src="./assets/images/divers/dinan.png" alt="">
             <p>Venez profiter de nos produits de qualité et de notre intérieur chaleureux, rencontrer nos producteurs locaux, assister à nos soirées débats ou concerts, et, pourquoi pas, passer pour une soirée de l'autre côté du fourneau, chez Lazez tout est possible!</p>
@@ -51,11 +54,100 @@
                 </ul>
             </div>
         </div>
-
+        <button class="home-resa"  id="home-resa">
+            <img src="/assets/icones/reservation.gif" alt="">
+        </button>
     </section>
+
+        <dialog id="favDialog">
+            
+            <form method="dialog">
+                <div class="close-form"><img src="/assets/icones/close.svg" alt=""></div>
+                 <label for="firstname">Prénom:</label>
+                  <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    required="required"
+                  />
+                  <label for="lastname">Nom</label>
+                  <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    required="required"/>
+                  <label for="email">E-mail</label>
+                  <input 
+                    type="email"
+                    id="email"
+                    name="email"
+                    required="required"/>
+                  <label for="date">Quand souhaitez-vous venir?</label>
+                  <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    required="required"/>
+                  <label for="hour">À quelle heure?</label>
+                    <select required name="hour" id="hour" onchange="">
+                        <option value="">--Veuillez choisir l'heure--</option>
+                        <option value="11:30">11h30</option>
+                        <option value="11:45">11h45</option>
+                        <option value="12:100">12h00</option>
+                        <option value="12:15">12h15</option>
+                        <option value="12:30">12h30</option>
+                        <option value="12:45">12h45</option>
+                        <option value="13:00">13h00</option>
+                        <option value="13:15">13h15</option>
+                        <option value="13:30">13h30</option>
+                        <option value="13:45">13h45</option>
+                        <option value="14:00">14h00</option>
+                        <option value="14:15">14h15</option>
+                        <option value="14:30">14h30</option>
+                        <option value="18:30">18h30</option>
+                        <option value="18:45">18h45</option>
+                        <option value="19:00">19h00</option>
+                        <option value="19:15">19h15</option>
+                        <option value="19:30">19h30</option>
+                        <option value="19:45">19h45</option>
+                        <option value="20:00">20h00</option>
+                        <option value="20:15">20h15</option>
+                        <option value="20:30">20h30</option>
+                        <option value="20:45">20h45</option>
+                        <option value="21:00">21h00</option>
+                    </select>
+                      <label for="quantity">Pour combien de convives?</label>
+                  <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
+                    max="50"
+                    required="required"
+                  />
+                <label for="comments">Avez-vous des souhaits particuliers?</label>
+                    <textarea id="comments" rows="5" cols="33" placeholder="souhaits ou régimes alimentaires particuliers, intérieur, extérieur, chaise enfant, etc."></textarea><br>
+               
+                <menu>
+                   
+                    <button id="resaBtn" value="default">Réserver</button>
+                </menu>
+            </form>
+        </dialog>
+    <div class="output-div">
+        <div class="output-container">
+            <div class="close-output"><img src="/assets/icones/close.svg" alt=""></div>
+
+
+            <output aria-live="polite"></output>
+        </div>
+    </div>
+
     <section id="events" class="events parallax">
-        <h3 class="heading-2">Évènements à venir:</h3>
+        <div class="events-container">
+            <h3 class="heading-2">Évènements à venir:</h3>
         <div class="all-events">
+            
             <div  class="events-list">
                 <ul>
                     <li class="li-after">
@@ -100,7 +192,7 @@ En fin de repas si vous avez trouvé quel était cet ingrédient et dans lequel 
                 
                     <li>
                         <h4>Samedi'rait bien de passer derrière les fourneaux.</h4>
-                        <p class="event-description">Comme chaque samedi un de nos convives sera tiré au sort pour participer, aux côtés de notre chef, à un service de midi derrière les fourneaux. Vous avez le choix de la date, l'invitation est valable durant les 6 prochains mois. Et bien entendu, vous prendrez gratuitement votre repas avec l'équipe avant le service. participent au tirage au sort tous les convives de plus de 14 ans (avec bien sûr l'accord dss parents pour les mineurs).</p>
+                        <p class="event-description">Comme chaque samedi un de nos convives sera tiré au sort pour participer, aux côtés de notre chef, à un service de midi derrière les fourneaux. Vous avez le choix de la date, l'invitation est valable durant les 6 prochains mois. Et bien entendu, vous prendrez gratuitement votre repas avec l'équipe avant le service. participent au tirage au sort tous les convives de plus de 14 ans le désirant (avec bien sûr l'accord des parents pour les mineurs).</p>
                         <p class="event-time">18h30-21h00</p>
                       
                             <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NzQ2ampxOTM5OWM2NzBpcjY3MTRlYXRtcnQgNzFlODFlM2Y4MDdjMzRlNWU3OGNmZWFjN2I2ZDNmYTg1NDUzOWU2YzZhNzMwMDc3ODgyMTU5ZTkzODFmNmQxMkBn&amp;tmsrc=71e81e3f807c34e5e78cfeac7b6d3fa854539e6c6a730077882159e9381f6d12%40group.calendar.google.com">Ajouter à mon agenda</a>
@@ -120,7 +212,8 @@ Cette semaine "Beignets de tomates verts", pas d'inquiétude notre chef ne s'est
             <div class="frame">
                 <iframe src="https://calendar.google.com/calendar/embed?src=71e81e3f807c34e5e78cfeac7b6d3fa854539e6c6a730077882159e9381f6d12%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
             </div>
-        </div>    
+        </div>  
+        </div>  
     </section>
     <section id="menu" class="menu parallax">
         <section class="menu-header">
@@ -132,7 +225,7 @@ Cette semaine "Beignets de tomates verts", pas d'inquiétude notre chef ne s'est
                 <li>À la carte des <span class="menu-important">prix simples et raisonnables</span>, toutes les entrées sont à 7€, les plats à 12€ et les desserts à 7€. Niveau boissons les softs seront à 3,5€ et les boissons alcoolisées à 5€ le verre, carafes ou bouteilles disponibles, consultez notre carte, elle change régulièrement selon les disponibilités de nos fournisseurs locaux</li>
             </ul>
         </aside>
-        <h3 class="heading-3">Et pour manger que vous propose-t-on?</h3>
+        <h3 class="heading-3">Dis Lazez, qu'est-ce qu'on mange?</h3>
         <aside class="aside-2">
             <h4>2 formules, 2 versions!</h4>
             <ul>
@@ -165,7 +258,7 @@ Cette semaine "Beignets de tomates verts", pas d'inquiétude notre chef ne s'est
     </section>
     <section id="contact" class="contact parallax heading-6">
         <section class="header-contact">
-            <h3>Nous contacter ou venir:</h3>
+            <h3>Nous contacter ou venir chez nous:</h3>
             <div class="contact-links">
                 <a target="_blank" href="https://www.facebook.com/Aux.Délices.De.Lazez">
                 <figure>
@@ -205,5 +298,8 @@ Cette semaine "Beignets de tomates verts", pas d'inquiétude notre chef ne s'est
     <script src="./js/menu.js"></script>
     <script src="./js/people.js"></script>
     <script src="./js/observers.js"></script>
+    <script  src="./js/reservation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async refer ></script>
+   
 </body>
 </html>
