@@ -85,3 +85,9 @@ label {
   background-color: black;
   color: wheat;
 }
+#rgpd-label {
+  display: block;
+}
+#rgpd-label a {
+  color: blue;
+}

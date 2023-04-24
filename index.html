@@ -28,6 +28,7 @@
                 <li><a id="link-4" href="#staffs">Équipe</a></li>
                 <li><a id="link-5" href="#products">Fournisseurs</a></li>
                 <li><a id="link-6" href="#contact">Contact</a></li>
+                
             </ul>
         </nav>
        </div>
@@ -41,8 +42,12 @@
                 <li><a href="#staffs">Équipe</a></li>
                 <li><a href="#products">Fournisseurs</a></li>
                 <li><a href="#contact">Contact</a></li>
-                
             </ul>
+            
+                    <button class="download-burger">
+                        <a href="/assets/doc/carte lazez.pdf" download>Télécharger la carte</a>
+                    </button>
+             
         </div>
         <a href="#" id="openBtn">
         <span class="burger-icon">
@@ -152,7 +157,9 @@
                   />
                 <label for="comments">Avez-vous des souhaits particuliers?</label>
                     <textarea id="comments" rows="5" cols="33" placeholder="souhaits ou régimes alimentaires particuliers, intérieur, extérieur, chaise enfant, etc."></textarea><br>
-               
+                    <label for="rgpd" id="rgpd-label"> J'ai pris connaissance  et accepte la politique de <br> conservation des données du site <a target="_blank" href="legal.html">ici</a>
+                        <input type="radio" name="rgpd" id="rgpd" value="ok" required>
+                     </label>          
                 <div>
                    
                     <button id="resaBtn" value="default">Réserver</button>
@@ -267,6 +274,7 @@ Cette semaine "Beignets de tomates verts", pas d'inquiétude notre chef ne s'est
                     </ul>
                 </li>
             </ul>
+            <button class="download"><a href="/assets/doc/carte lazez.pdf" download>Télécharger la carte</a></button>
         </aside>
         </section>
         <section class="menu-section">
@@ -276,7 +284,7 @@ Cette semaine "Beignets de tomates verts", pas d'inquiétude notre chef ne s'est
         </section>
          <div class="note">Notre chef se tient à votre dispostion pour parler allergènes et régime alimentaire particulier et adaptera sa cuisine pour votre plaisir et votre sécurité.</div>
         <div class="menu-photos">
-            <img src="/assets/doc/carte.gif" alt="">
+            <a href="/assets/doc/carte lazez.pdf" download><img src="/assets/doc/carte.gif" alt=""></a>
         </div>
     </section>
     <section id="staffs" class="staffs parallax heading-4">
@@ -318,7 +326,7 @@ Cette semaine "Beignets de tomates verts", pas d'inquiétude notre chef ne s'est
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.098948148094!2d-2.0489436999999997!3d48.454631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480e8a18d8d1ce13%3A0x19c6b4fab41e95c9!2s24%20Pl.%20Duclos%2C%2022100%20Dinan!5e0!3m2!1sfr!2sfr!4v1681983877110!5m2!1sfr!2sfr" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <img src="/assets/images/logo/8.png" alt="">
         </section>
-        <footer><a target="_blank" href="legal.html">Mentions légales</a></footer>
+        <footer><a target="_blank" href="legal.html">Mentions légales, confidentialité</a></footer>
     </section>
     
     <script src="./js/script.js"></script>
