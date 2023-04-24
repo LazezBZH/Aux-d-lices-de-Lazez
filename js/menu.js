@@ -56,7 +56,7 @@ function renderPlats(plats) {
 function renderDesserts(desserts) {
   const dessertsSection = document.querySelector("#desserts");
 
-  dessertsSection.innerHTML = `<h4>Entrées</h4><p class="price">7€</p> <div class="divDessertsThumbs"></div>`;
+  dessertsSection.innerHTML = `<h4>Desserts</h4><p class="price">7€</p> <div class="divDessertsThumbs"></div>`;
   const divDessertsThumbs = document.querySelector(".divDessertsThumbs");
   for (let i = 0; i < desserts.length; i++) {
     let dessert = desserts[i];

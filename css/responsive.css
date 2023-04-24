@@ -1,0 +1,249 @@
+@media screen and (max-width: 1160px) {
+  .menu-header {
+    margin-top: 2rem;
+  }
+  .menu-header h3 {
+    max-width: 250px;
+    height: 9rem;
+    margin: 0;
+  }
+  .menu h4 {
+    font-size: 1.5rem;
+  }
+  .price {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .menu-section {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .all-events {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .events-list {
+    height: 900px;
+    overflow: scroll;
+    scrollbar-color: wheat transparent;
+    scrollbar-width: thin;
+  }
+  .frame {
+    margin-top: 0;
+  }
+  .events h3 {
+    max-width: 40%;
+    margin-top: 2rem;
+  }
+  .events-list::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .events-list::-webkit-scrollbar-thumb {
+    background: wheat;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .divStaffsThumbs,
+  .divProductsThumbs {
+    max-height: 900px;
+    overflow: scroll;
+    scrollbar-color: wheat transparent;
+    scrollbar-width: thin;
+  }
+  .divStaffsThumbs figure,
+  .divProductsThumbs figure {
+    width: 30%;
+  }
+  .divStaffsThumbs::-webkit-scrollbar,
+  .divProductsThumbs::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .divStaffsThumbs::-webkit-scrollbar-thumb,
+  .divProductsThumbs::-webkit-scrollbar-thumb {
+    background: wheat;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .menu {
+    min-height: 2900px;
+  }
+}
+@media screen and (max-width: 940px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .menu {
+    min-height: 3000px;
+  }
+  .carousel,
+  .paginatorBtn {
+    display: none;
+  }
+  .carousel2 {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel2 img {
+    width: 100%;
+  }
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .home p {
+    font-size: 1.2rem;
+  }
+  .carousel li img {
+    height: 190px;
+  }
+  #dia1,
+  #dia2,
+  #dia3,
+  #dia4,
+  #dia5,
+  #dia6 {
+    width: 380px;
+    height: 200px;
+    border: 3px solid rgb(177, 131, 44);
+    border-radius: 25px;
+    box-shadow: 2px 3px 3px rgba(177, 130, 44, 0.6);
+    background: wheat;
+  }
+  .menu-header {
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+  }
+  .menu-header h3 {
+    max-width: 80%;
+    height: 3rem;
+  }
+  .aside-1,
+  .aside-2 {
+    width: 95%;
+  }
+  .aside-2 {
+    transform: rotate(0deg);
+  }
+  .infos-contact iframe {
+    display: none;
+  }
+  .infos-contact {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .infos-contact img {
+    width: 75%;
+  }
+  .contact {
+    max-height: inherit;
+  }
+}
+@media screen and (max-width: 730px) {
+  nav {
+    display: none;
+  }
+  .sidenav,
+  #openBtn {
+    display: block;
+  }
+}
+@media screen and (max-width: 700px) {
+  .menu-section {
+    display: none;
+  }
+  .note {
+    display: none;
+  }
+  .menu-photos {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .menu-photos img {
+    width: 80%;
+  }
+  .aside-2 {
+    display: none;
+  }
+  .aside-1 {
+    width: 80%;
+    margin: auto;
+  }
+  .menu-header h3 {
+    display: none;
+  }
+  .menu {
+    min-height: 1000px;
+    max-height: 1200px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .frame {
+    padding: auto;
+    display: flex;
+    justify-content: center;
+  }
+  iframe {
+    width: 80%;
+  }
+
+  .carousel li img {
+    height: 130px;
+  }
+  #output-container_small .output-container_reveal {
+    padding: 1rem;
+  }
+  #output-container_small output {
+    color: black;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .divStaffsThumbs figure,
+  .divProductsThumbs figure {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 620px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 510px) {
+  h2 {
+    font-size: 1rem;
+  }
+  .events h3 {
+    max-width: inherit;
+    padding: auto;
+  }
+  .header-contact {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .home-container {
+    margin-top: 70px;
+  }
+}

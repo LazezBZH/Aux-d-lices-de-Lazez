@@ -7,6 +7,7 @@
     <title>Aux délices de Lazez</title>
 
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
     <link rel="stylesheet" href="css/reservation.css"/>
 
     
@@ -21,7 +22,7 @@
             <h2>Restaurant gastronomique, soirées à thème</h2>
         <nav>
             <ul>
-                <li> <a id="link-1" href="#home">Accueil</a> </li>
+                <li> <a id="link-1" href="">Accueil</a> </li>
                 <li> <a id="link-2" href="#events">Évènements</a></li>
                 <li><a id="link-3" href="#menu">Menu</a></li>
                 <li><a id="link-4" href="#staffs">Équipe</a></li>
@@ -30,6 +31,27 @@
             </ul>
         </nav>
        </div>
+       <!-- burger -->
+       <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li> <a href="">Accueil</a> </li>
+                <li> <a href="#events">Évènements</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#staffs">Équipe</a></li>
+                <li><a href="#products">Fournisseurs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </div>
+        <a href="#" id="openBtn">
+        <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        </a>
+
     </header>
     <section id="home" class="home parallax">
         <div class="home-container">
@@ -45,13 +67,16 @@
             <h3 class="heading-1"> Notre intérieur</h3>
             <div class="carousel">
                 <ul>
-                    <li><div id="red"><img src="/assets/inside/inside1.jpg" alt=""></div></li>
-                    <li><div id="green"><img src="/assets/inside/inside2.jpg" alt=""></div></li>
-                    <li><div id="blue"><img src="/assets/inside/inside3.jpg" alt=""></div></li>
-                    <li><div id="red2"><img src="/assets/inside/inside4.jpg" alt=""></div></li>
-                    <li><div id="green2"><img src="/assets/inside/inside5.jpg" alt=""></div></li>
-                    <li><div id="blue2"><img src="/assets/inside/inside6.jpg" alt=""></div></li>
+                    <li><div id="dia1"><img src="/assets/inside/inside1.jpg" alt=""></div></li>
+                    <li><div id="dia2"><img src="/assets/inside/inside2.jpg" alt=""></div></li>
+                    <li><div id="dia3"><img src="/assets/inside/inside3.jpg" alt=""></div></li>
+                    <li><div id="dia4"><img src="/assets/inside/inside4.jpg" alt=""></div></li>
+                    <li><div id="dia5"><img src="/assets/inside/inside5.jpg" alt=""></div></li>
+                    <li><div id="dia6"><img src="/assets/inside/inside6.jpg" alt=""></div></li>
                 </ul>
+            </div>
+            <div class="carousel2">
+                <img src="/assets/inside/inside.gif" alt="">
             </div>
         </div>
         <button class="home-resa"  id="home-resa">
@@ -128,14 +153,14 @@
                 <label for="comments">Avez-vous des souhaits particuliers?</label>
                     <textarea id="comments" rows="5" cols="33" placeholder="souhaits ou régimes alimentaires particuliers, intérieur, extérieur, chaise enfant, etc."></textarea><br>
                
-                <menu>
+                <div>
                    
                     <button id="resaBtn" value="default">Réserver</button>
-                </menu>
+                </div>
             </form>
         </dialog>
-    <div class="output-div">
-        <div class="output-container">
+    <div class="output-div" id="output-container_small">
+        <div class="output-container" >
             <div class="close-output"><img src="/assets/icones/close.svg" alt=""></div>
 
 
@@ -222,7 +247,7 @@ Cette semaine "Beignets de tomates verts", pas d'inquiétude notre chef ne s'est
             <ul>
                 <li>Les mêmes formules midi <span class="menu-important"> ET</span> soir</li>
                 <li>Pas de menu enfants, ils ont le droit de manger des plats aussi raffinés que les adultes, on considère que l'éveil du goût est important. Bien sûr ils mangent moins que les adultes (enfin certains), on a donc créé des <span class="menu-important"> formules "petite faim"</span>, la même chose que la formule classique mais en plus petites portions. Et comme n'avoir qu'une petite faim n'est pas réservé aux enfants, pas de limite d'âge, un adulte peut choisr ces formules.</li>
-                <li>À la carte des <span class="menu-important">prix simples et raisonnables</span>, toutes les entrées sont à 7€, les plats à 12€ et les desserts à 7€. Niveau boissons les softs seront à 3,5€ et les boissons alcoolisées à 5€ le verre, carafes ou bouteilles disponibles, consultez notre carte, elle change régulièrement selon les disponibilités de nos fournisseurs locaux</li>
+                <li>À la carte des <span class="menu-important">prix simples et raisonnables</span>, toutes les entrées sont à 7€, les plats à 12€ et les desserts à 7€. Niveau boissons les softs seront à 3,5€ et les boissons alcoolisées à 5€ le verre, carafes ou bouteilles disponibles, consultez notre carte sur place, elle change régulièrement selon les disponibilités de nos fournisseurs locaux</li>
             </ul>
         </aside>
         <h3 class="heading-3">Dis Lazez, qu'est-ce qu'on mange?</h3>
@@ -231,14 +256,14 @@ Cette semaine "Beignets de tomates verts", pas d'inquiétude notre chef ne s'est
             <ul>
                 <li class="menu-important">Entrée + plat ou plat + dessert (ou fromages)
                     <ul>
-                        <li class="imp-price">  16€</li>
-                        <li>Petite faim: <span class="imp-price">12€</span></li>
+                        <li class="imp-price">  17€</li>
+                        <li>Petite faim: <span class="imp-price">14€</span></li>
                     </ul>
                 </li>
                 <li class="menu-important">Entrée + plat + dessert (ou fromages)
                     <ul>
-                        <li class="imp-price">21€</li>
-                        <li>Petite faim: <span class="imp-price">17€</span></li>
+                        <li class="imp-price">22€</li>
+                        <li>Petite faim: <span class="imp-price">19€</span></li>
                     </ul>
                 </li>
             </ul>
@@ -250,7 +275,9 @@ Cette semaine "Beignets de tomates verts", pas d'inquiétude notre chef ne s'est
             <div id="desserts"></div>
         </section>
          <div class="note">Notre chef se tient à votre dispostion pour parler allergènes et régime alimentaire particulier et adaptera sa cuisine pour votre plaisir et votre sécurité.</div>
-   
+        <div class="menu-photos">
+            <img src="/assets/doc/carte.gif" alt="">
+        </div>
     </section>
     <section id="staffs" class="staffs parallax heading-4">
     </section>
@@ -291,15 +318,17 @@ Cette semaine "Beignets de tomates verts", pas d'inquiétude notre chef ne s'est
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.098948148094!2d-2.0489436999999997!3d48.454631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480e8a18d8d1ce13%3A0x19c6b4fab41e95c9!2s24%20Pl.%20Duclos%2C%2022100%20Dinan!5e0!3m2!1sfr!2sfr!4v1681983877110!5m2!1sfr!2sfr" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <img src="/assets/images/logo/8.png" alt="">
         </section>
+        <footer><a target="_blank" href="legal.html">Mentions légales</a></footer>
     </section>
-    <footer><a target="_blank" href="legal.html">Mentions légales</a></footer>
+    
     <script src="./js/script.js"></script>
+    <script src="./js/sidenav.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/people.js"></script>
     <script src="./js/observers.js"></script>
     <script  src="./js/reservation.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async refer ></script>
+   
    
 </body>
 </html>

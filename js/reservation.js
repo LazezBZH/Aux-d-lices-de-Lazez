@@ -1,5 +1,5 @@
 let homeResa = document.getElementById("home-resa");
-let favDialog = document.getElementById("favDialog");
+const dialog = document.querySelector("dialog");
 let outputBox = document.querySelector("output");
 
 let firstname = document.querySelector("#firstname");
@@ -30,15 +30,13 @@ date.min = today;
 date.max = todayMax;
 
 // ouverture du form
+homeResa.addEventListener("click", coucou);
+function coucou() {
+  console.log("coucou");
+}
 homeResa.addEventListener("click", openForm);
 function openForm() {
-  if (typeof favDialog.showModal === "function") {
-    favDialog.showModal();
-  } else {
-    console.error(
-      "L'API <dialog> n'est pas prise en charge par ce navigateur."
-    );
-  }
+  dialog.showModal();
 }
 
 // définir le texte de l'output
@@ -120,14 +118,16 @@ function displayOutput(e) {
     yearResa +
     " à " +
     hour.value +
-    " a bien été prise en compte, vous recevrez prochainement un mail de confirmation. Nous avons hâte de régaler vos papilles! ";
+    " a bien été prise en compte, vous recevrez prochainement un mail de confirmation à l'adresse: " +
+    email.value +
+    ". Nous avons hâte de régaler vos papilles! ";
 }
 
-// quiter le formulaire ou femer l'output
-favDialog.addEventListener("close", function onClose() {
+// quiter le formulaire ou fermer l'output
+dialog.addEventListener("close", function onClose() {
   outputDiv.classList.add("output-div_reveal");
   outputContainer.classList.add("output-container_reveal");
-  outputBox.value = favDialog.returnValue;
+  outputBox.value = dialog.returnValue;
 });
 
 let closeForm = document.querySelector(".close-form");

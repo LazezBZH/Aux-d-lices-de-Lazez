@@ -80,13 +80,13 @@
       let btnLeft = document.createElement("div");
       let btnRight = document.createElement("div");
 
-      btnLeft.className = "btn";
+      btnLeft.className = "paginatorBtn";
       btnLeft.innerHTML = `&#9664;`;
       btnLeft.onclick = moveLeft;
 
       btnRight.onclick = moveRight;
       btnRight.innerHTML = `&#9654;`;
-      btnRight.className = "btn";
+      btnRight.className = "paginatorBtn";
 
       carousel.pagination.className = "paginator";
       carousel.pagination.appendChild(btnLeft);
