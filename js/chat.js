@@ -7,7 +7,8 @@ let displayMsg = document.querySelector("#display-msg");
 
 openChatBtn.addEventListener("click", openChatForm);
 closeChatBtn.addEventListener("click", closeChatForm);
-sendChatBtn.addEventListener("mouseup", getMsg);
+sendChatBtn.addEventListener("click", getMsg);
+consumerMsg.addEventListener("keydown", enter);
 
 // OUVERTURE CHAT
 function openChatForm() {
@@ -17,7 +18,7 @@ function openChatForm() {
 }
 // génération du message d'accueil une seule fois à l'ouverture du chat
 function once(fn, context) {
-  var result;
+  let result;
 
   return function () {
     if (fn) {
@@ -44,6 +45,14 @@ function closeChatForm() {
 }
 
 // RÉCUPÉRATION DES MESSAGES CLIENTS
+function enter(e) {
+  // envoyer le message avec la touche entrée
+  const keyCode = e.which || e.keyCode;
+  if (keyCode === 13 && !e.shiftKey) {
+    e.preventDefault();
+    getMsg();
+  }
+}
 function getMsg() {
   if (consumerMsg.value != "") {
     let messageToWrite = consumerMsg.value;
