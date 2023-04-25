@@ -1,3 +1,11 @@
+let errorFirstname = document.getElementById("error-firstname");
+let errorLastname = document.getElementById("error-lastname");
+let errorEmail = document.getElementById("error-email");
+let errorDate = document.getElementById("error-date");
+let errorQuantity = document.getElementById("error-quantity");
+let errorHour = document.getElementById("error-hour");
+let errorConditions = document.getElementById("error-conditions");
+
 let homeResa = document.getElementById("home-resa");
 let resaBtn = document.getElementById("resaBtn");
 let closeForm = document.querySelector(".close-form");
@@ -17,6 +25,7 @@ let date = document.querySelector("#date");
 let hour = document.querySelector("select");
 let quantity = document.querySelector("#quantity");
 let textarea = document.querySelector("textarea");
+let conditions = document.querySelector("#rgpd");
 
 // définir les min et max de l'input date
 let dateToday = new Date();
@@ -41,14 +50,87 @@ function openForm() {
 }
 
 // définir le texte de l'output
-firstname.addEventListener("change", displayOutput);
-lastname.addEventListener("change", displayOutput);
-email.addEventListener("change", displayOutput);
-date.addEventListener("change", displayOutput);
-hour.addEventListener("change", displayOutput);
-quantity.addEventListener("change", displayOutput);
-textarea.addEventListener("change", displayOutput);
-resaBtn.addEventListener("click", showOutput);
+firstname.addEventListener("keyup", validateFirstname);
+lastname.addEventListener("keyup", validateLastname);
+email.addEventListener("keyup", validateEmail);
+date.addEventListener("change", validateDate);
+hour.addEventListener("change", validateHour);
+quantity.addEventListener("change", validateQuantity);
+conditions.addEventListener("change", validateConditions);
+resaBtn.addEventListener("click", displayOutput);
+
+function validateFirstname() {
+  if (!firstname.value) {
+    errorFirstname.textContent = "* Veuillez renseigner votre prénom.";
+    return false;
+  } else {
+    errorFirstname.textContent = "";
+    return true;
+  }
+}
+function validateLastname() {
+  if (!lastname.value) {
+    errorLastname.textContent = "* Veuillez renseigner votre nom.";
+    return false;
+  } else {
+    errorLastname.textContent = "";
+    return true;
+  }
+}
+function validateEmail() {
+  let mailRegex =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (!email.value) {
+    errorEmail.textContent = "* Veuillez renseigner votre mail.";
+    return false;
+  } else if (!email.value.match(mailRegex)) {
+    errorEmail.textContent = "* Le format de votre mail ne semble pas correct.";
+    return false;
+  } else {
+    errorEmail.textContent = "";
+    return true;
+  }
+}
+function validateDate() {
+  if (!date.value) {
+    errorDate.textContent = "* Veuillez choisir une date.";
+    return false;
+  } else {
+    errorDate.textContent = "";
+    return true;
+  }
+}
+function validateHour() {
+  if (!hour.value) {
+    errorHour.textContent = "* Veuillez choisir une heure.";
+    return false;
+  } else {
+    errorHour.textContent = "";
+    return true;
+  }
+}
+function validateQuantity() {
+  if (!quantity.value || quantity.value < 1) {
+    errorQuantity.textContent = "* Pour combien de personnes.";
+    return false;
+  } else if (quantity.value > 50) {
+    errorQuantity.textContent =
+      "* Pour réserver pour plus de 50 personnes merci de nous contacter par téléphone.";
+  } else {
+    errorQuantity.textContent = "";
+    return true;
+  }
+}
+function validateConditions() {
+  if (conditions.checked) {
+    errorConditions.textContent = " ";
+    return true;
+  } else {
+    errorConditions.textContent =
+      "* Vous devez lire et accepter les conditions d'utilisation.";
+    return false;
+  }
+}
 
 function displayOutput() {
   // réécriture de la date
@@ -123,6 +205,24 @@ function displayOutput() {
      a bien été prise en compte</p> <p class="output-p">Vous recevrez prochainement un mail de confirmation à l'adresse: 
     ${email.value} 
     .</p><p class="output-p"> Nous avons hâte de régaler vos papilles!</p> `;
+  let firstnameValide = validateFirstname();
+  let lastnameValide = validateLastname();
+  let emailValide = validateEmail();
+  let dateValide = validateDate();
+  let hourValide = validateHour();
+  let quantityValide = validateQuantity();
+  let conditionsValide = validateConditions();
+  let formValide =
+    firstnameValide &&
+    lastnameValide &&
+    emailValide &&
+    dateValide &&
+    hourValide &&
+    quantityValide &&
+    conditionsValide;
+  if (formValide) {
+    showOutput();
+  }
 }
 
 function showOutput() {
@@ -139,4 +239,11 @@ function closeAll() {
   output.classList.remove("output-txt_reveal");
   dialog.style.display = "none";
   form.reset();
+  errorFirstname.textContent = "";
+  errorLastname.textContent = "";
+  errorEmail.textContent = "";
+  errorDate.textContent = "";
+  errorHour.textContent = "";
+  errorQuantity.textContent = "";
+  errorConditions.textContent = "";
 }

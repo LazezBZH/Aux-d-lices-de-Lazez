@@ -125,7 +125,7 @@
 <!-- réservation -->
         <div id="dialog">
             
-            <form method="post" class="dialog-form" >
+            <form method="get" class="dialog-form" >
                 <div class="close-form"><img src="/assets/icones/close.svg" alt=""></div>
                  <label for="firstname">Prénom:</label>
                   <input
@@ -134,24 +134,28 @@
                     name="firstname"
                     required="required"
                   />
+                  <span class="error" id="error-firstname"></span>
                   <label for="lastname">Nom</label>
                   <input
                     type="text"
                     id="lastname"
                     name="lastname"
                     required="required"/>
+                    <span class="error" id="error-lastname"></span>
                   <label for="email">E-mail</label>
                   <input 
                     type="email"
                     id="email"
                     name="email"
                     required="required"/>
+                    <span class="error" id="error-email"></span>
                   <label for="date">Quand souhaitez-vous venir?</label>
                   <input
                     type="date"
                     id="date"
                     name="date"
                     required="required"/>
+                    <span class="error" id="error-date"></span>
                   <label for="hour">À quelle heure?</label>
                     <select required name="hour" id="hour" onchange="">
                         <option value="">--Veuillez choisir l'heure--</option>
@@ -180,6 +184,7 @@
                         <option value="20:45">20h45</option>
                         <option value="21:00">21h00</option>
                     </select>
+                    <span class="error" id="error-hour"></span>
                       <label for="quantity">Pour combien de convives?</label>
                   <input
                     type="number"
@@ -189,11 +194,13 @@
                     max="50"
                     required="required"
                   />
+                  <span class="error" id="error-quantity"></span>
                 <label for="comments">Avez-vous des souhaits particuliers?</label>
                     <textarea id="comments" rows="5" cols="33" placeholder="souhaits ou régimes alimentaires particuliers, intérieur, extérieur, chaise enfant, etc."></textarea><br>
                     <label for="rgpd" id="rgpd-label"> J'ai pris connaissance  et accepte la politique de <br> conservation des données du site <a target="_blank" href="legal.html">ici</a>
-                        <input type="radio" name="rgpd" id="rgpd" value="ok" required>
-                     </label>          
+                        <input type="checkbox" name="rgpd" id="rgpd" value="ok" required>
+                     </label>    
+                     <span class="error" id="error-conditions"></span>      
                 <div>
                    
                     <p id="resaBtn" value="default">Réserver</p>

@@ -95,10 +95,15 @@ label {
   max-width: 30%;
   text-align: center;
   margin-top: 1rem;
+  cursor: pointer;
 }
 #rgpd-label {
   display: block;
 }
 #rgpd-label a {
   color: blue;
+}
+.error {
+  color: red;
+  font-size: 0.8rem;
 }
