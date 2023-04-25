@@ -1,4 +1,4 @@
-dialog {
+#dialog {
   width: 100vw;
   height: 100vh;
   background-color: rgba(128, 128, 128, 0.7);
@@ -9,16 +9,17 @@ dialog {
   z-index: 999;
   color: black;
   border: none;
+  display: none;
 }
-dialog input,
-dialog option,
-dialog button,
-dialog label,
-dialog select,
-dialog textarea {
+#dialog input,
+#dialog option,
+#dialog button,
+#dialog label,
+#dialog select,
+#dialog textarea {
   color: black;
 }
-form {
+.dialog-form {
   margin: auto;
   position: absolute;
   top: 50%;
@@ -29,11 +30,13 @@ form {
   border-radius: 15px;
 }
 .output-div,
-.output-container {
-  width: 0;
-  height: 0;
+.output-container,
+.output-txt {
+  display: none;
 }
+
 .output-div_reveal {
+  display: block;
   width: 100vw;
   height: 100vh;
   background-color: rgba(128, 128, 128, 0.7);
@@ -46,10 +49,11 @@ form {
 }
 
 .output-container_reveal {
+  display: block;
   width: auto;
   min-height: 50vh;
   border-radius: 5px;
-  padding: 5rem;
+  padding: 2rem;
   margin: auto;
   position: absolute;
   top: 50%;
@@ -59,9 +63,13 @@ form {
   display: flex;
   align-items: center;
 }
-output {
+.output-txt_reveal {
+  display: block;
+}
+.output-p {
   color: black;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-indent: 20px;
 }
 .close-form,
 .close-output {
@@ -84,6 +92,9 @@ label {
   padding: 0.3rem;
   background-color: black;
   color: wheat;
+  max-width: 30%;
+  text-align: center;
+  margin-top: 1rem;
 }
 #rgpd-label {
   display: block;

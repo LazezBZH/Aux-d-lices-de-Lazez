@@ -161,7 +161,7 @@
     width: 75%;
   }
   .contact {
-    max-height: inherit;
+    min-height: 120vh;
   }
 }
 @media screen and (max-width: 730px) {
@@ -254,9 +254,16 @@
   .header-contact {
     width: 90%;
   }
+  #output-txt p {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (max-width: 420px) {
   .home-container {
     margin-top: 70px;
   }
+  /* #output-txt p {
+    font-size: 20px;
+    color: red;
+  } */
 }

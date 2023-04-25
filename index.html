@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aux délices de Lazez</title>
 
+    <link type="image/png" sizes="16x16" rel="icon" href="/assets/icones/favicons/icons8-chapeau-de-chef-16.png">
+<link type="image/png" sizes="32x32" rel="icon" href="/assets/icones/favicons/icons8-chapeau-de-chef-32.png">
+<link type="image/png" sizes="96x96" rel="icon" href="/assets/icones/favicons/icons8-chapeau-de-chef-96.png">
+<link rel="icon" type="image/png" sizes="72x72" href="/assets/icones/favicons/icons8-chapeau-de-chef-72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/icones/favicons/icons8-chapeau-de-chef-96.png">
+<link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/assets/icones/favicons/icons8-chapeau-de-chef-57.png">
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/assets/icones/favicons/icons8-chapeau-de-chef-60.png">
+<link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/assets/icones/favicons/icons8-chapeau-de-chef-72.png">
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/icones/favicons/icons8-chapeau-de-chef-76.png">
+<meta name="msapplication-square70x70logo" content="/assets/icones/favicons/icons8-chapeau-de-chef-70.png">
+<meta name="msapplication-TileColor" content="#C0FFEE">
+<link rel="manifest" href="/manifest.json" />
+
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/responsive.css"/>
     <link rel="stylesheet" href="css/reservation.css"/>
+     <link rel="stylesheet" href="css/chat.css"/>
 
     
 </head>
@@ -22,7 +36,7 @@
             <h2>Restaurant gastronomique, soirées à thème</h2>
         <nav>
             <ul>
-                <li> <a id="link-1" href="">Accueil</a> </li>
+                <li> <a id="link-1" href="#home">Accueil</a> </li>
                 <li> <a id="link-2" href="#events">Évènements</a></li>
                 <li><a id="link-3" href="#menu">Menu</a></li>
                 <li><a id="link-4" href="#staffs">Équipe</a></li>
@@ -36,7 +50,7 @@
        <div id="mySidenav" class="sidenav">
             <a id="closeBtn" href="#" class="close">×</a>
             <ul>
-                <li> <a href="">Accueil</a> </li>
+                <li> <a href="#home">Accueil</a> </li>
                 <li> <a href="#events">Évènements</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#staffs">Équipe</a></li>
@@ -49,13 +63,13 @@
                     </button>
              
         </div>
-        <a href="#" id="openBtn">
+        <div id="openBtn">
         <span class="burger-icon">
             <span></span>
             <span></span>
             <span></span>
         </span>
-        </a>
+        </div>
 
     </header>
     <section id="home" class="home parallax">
@@ -87,11 +101,31 @@
         <button class="home-resa"  id="home-resa">
             <img src="/assets/icones/reservation.gif" alt="">
         </button>
-    </section>
+        <button class="open-chat"  id="open-chat">
+            <img src="/assets/icones/chat.png" alt="">
+        </button>
+        <!-- chat -->
+        <div class="chat-pop" id="chat-pop">
+            <div  class="chat-btn_close"><img id="close-chat" src="/assets/icones/close.svg" alt=""></div>
+                <h4>Bienvenue chez Lazez!</h4>
+            <form  class="chat-form">
+                
+                <ul id="display-msg">
+                </ul>
+                <label for="msg">Votre message</label>
+                <textarea placeholder="Que pouvons-nous faire pour vous?" name="msg" id="consumer-msg" required></textarea>
 
-        <dialog id="favDialog">
+                <div  class="chat-btn_send">
+                    <p id="send-chat">Envoyer</p>
+                </div>
+                
+            </form>
+</div>
+    </section>
+<!-- réservation -->
+        <div id="dialog">
             
-            <form method="dialog">
+            <form method="post" class="dialog-form" >
                 <div class="close-form"><img src="/assets/icones/close.svg" alt=""></div>
                  <label for="firstname">Prénom:</label>
                   <input
@@ -162,16 +196,16 @@
                      </label>          
                 <div>
                    
-                    <button id="resaBtn" value="default">Réserver</button>
+                    <p id="resaBtn" value="default">Réserver</p>
                 </div>
             </form>
-        </dialog>
+        </div>
     <div class="output-div" id="output-container_small">
         <div class="output-container" >
             <div class="close-output"><img src="/assets/icones/close.svg" alt=""></div>
 
 
-            <output aria-live="polite"></output>
+            <div class="output-txt"></div>
         </div>
     </div>
 
@@ -336,6 +370,7 @@ Cette semaine "Beignets de tomates verts", pas d'inquiétude notre chef ne s'est
     <script src="./js/people.js"></script>
     <script src="./js/observers.js"></script>
     <script  src="./js/reservation.js"></script>
+    <script  src="./js/chat.js"></script>
    
    
 </body>

@@ -1,5 +1,4 @@
 const ratio = 0.2;
-// const ratio2 = 0.5;
 
 const options = {
   root: null,
@@ -7,81 +6,65 @@ const options = {
   threshold: ratio,
 };
 
-// const toggleLinks = () => {
-//   links.forEach((link) => {
-//     link.classList.remove("active");
-//   });
-// };
-
 const toggleLinks1 = function (entries) {
   const link1 = document.querySelector("#link-1");
 
   entries.forEach((entry) => {
     if (entry.intersectionRatio > ratio) {
-      //   console.log("link1");
       links.forEach((link) => {
         link.classList.remove("active");
       });
       link1.classList.add("active");
     }
   });
-  //   console.log(toggleLinks1);
 };
 const toggleLinks2 = function (entries) {
   const link2 = document.querySelector("#link-2");
 
   entries.forEach((entry) => {
     if (entry.intersectionRatio > ratio) {
-      //   console.log("link2");
       links.forEach((link) => {
         link.classList.remove("active");
       });
       link2.classList.add("active");
     }
   });
-  //   console.log(toggleLinks2);
 };
 const toggleLinks3 = function (entries) {
   const link3 = document.querySelector("#link-3");
 
   entries.forEach((entry) => {
     if (entry.intersectionRatio > ratio) {
-      //   console.log("link3");
       links.forEach((link) => {
         link.classList.remove("active");
       });
       link3.classList.add("active");
     }
   });
-  //   console.log(toggleLinks1);
 };
 const toggleLinks4 = function (entries) {
   const link4 = document.querySelector("#link-4");
 
   entries.forEach((entry) => {
     if (entry.intersectionRatio > ratio) {
-      //   console.log("link4");
       links.forEach((link) => {
         link.classList.remove("active");
       });
       link4.classList.add("active");
     }
   });
-  //   console.log(toggleLinks1);
 };
 const toggleLinks5 = function (entries) {
   const link5 = document.querySelector("#link-5");
 
   entries.forEach((entry) => {
     if (entry.intersectionRatio > ratio) {
-      //   console.log("link5");
       links.forEach((link) => {
         link.classList.remove("active");
       });
       link5.classList.add("active");
     }
   });
-  //   console.log(toggleLinks1);
 };
 const toggleLinks6 = function (entries) {
   const link6 = document.querySelector("#link-6");
@@ -89,15 +72,12 @@ const toggleLinks6 = function (entries) {
 
   entries.forEach((entry) => {
     if (entry.intersectionRatio > ratio) {
-      //   console.log("link6");
       links.forEach((link) => {
         link.classList.remove("active");
       });
       link6.classList.add("active");
-      // homeBtn.style.top = "60%";
     }
   });
-  //   console.log(toggleLinks6);
 };
 
 const observer1 = new IntersectionObserver(toggleLinks1, options);
