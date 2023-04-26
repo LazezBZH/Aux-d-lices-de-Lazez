@@ -10,11 +10,19 @@ closeChatBtn.addEventListener("click", closeChatForm);
 sendChatBtn.addEventListener("click", getMsg);
 consumerMsg.addEventListener("keydown", enter);
 
+document.addEventListener("mouseup", function (event) {
+  // var obj = document.getElementById("container");
+  if (!chat.contains(event.target)) {
+    closeChatForm();
+  }
+});
+
 // OUVERTURE CHAT
 function openChatForm() {
   chat.style.display = "block";
   openChatBtn.style.display = "none";
   sayHello();
+  consumerMsg.focus();
 }
 // génération du message d'accueil une seule fois à l'ouverture du chat
 function once(fn, context) {
@@ -32,7 +40,7 @@ function once(fn, context) {
 let sayHello = once(function () {
   setTimeout(function () {
     displayMsg.innerHTML += `<li class="user-said"> 
-                        <div class="us" ><img src="/assets/icones/chef.png" alt=""></div>
+                        <div class="us"><img src="/assets/icones/chef.png" alt=""></div>
                         <p class="our-message">Bonjour, toute l'équipe de chez Lazez sera heureuse de vous renseigner au plus vite.</p>
                     </li>`;
   }, 300);
@@ -89,5 +97,6 @@ function displayFakeResponse() {
                         <p class="our-message">${fakeResponse[i]}</p>
                     </li>`;
     displayMsg.scrollTop = displayMsg.scrollHeight;
+    consumerMsg.focus();
   }, 600);
 }

@@ -49,6 +49,7 @@ closeOutput.addEventListener("click", closeAll);
 // ouverture du form
 function openForm() {
   dialog.style.display = "block";
+  firstname.focus();
 }
 
 // définir le texte de l'output
