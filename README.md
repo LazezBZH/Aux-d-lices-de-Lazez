@@ -51,8 +51,8 @@ Thème: "RESTAURANT"
   - CSS
   - JS (observer au scroll change la nav)
 - Site "one page" avec effet parallax
-- Fonctionnalité de chat
-- Formulaire de réservation
+- Fonctionnalité de chat (focus auto sur textarea, fermeture avec conservation au clic extérieur)
+- Formulaire de réservation (focus à l'ouverture sur le premier input)
 - Soirées à thème avec possibilité d'ajouter les évènements à l'agenda
 - Présentation de l'équipe et des producteurs/fournisseurs
 - Menu en ligne et téléchargeable
