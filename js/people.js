@@ -49,6 +49,8 @@ function renderProducts(products) {
     <h4 class="thumbnail-title" > ${product.name}</h4>
     <p class="thumbnail-description" >${product.product}</p>
     <p class="city">${product.city}</p>
+    <p>Distance: ${product.distance}</p>
+    <a target="_blank" href=${product.link}>Visiter leur site</a>
     </figcaption>
 </figure>
 `;

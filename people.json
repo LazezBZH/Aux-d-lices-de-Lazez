@@ -63,56 +63,72 @@
       "image": "/assets/products/product1.jpg",
       "name": "Axel",
       "product": "Producteur de fromages de chèvre",
-      "city": "Trélivan (22)"
+      "city": "Le Minihic-sur-Rance (35)",
+      "link": "https://www.facebook.com/Chevrerieduphareouest/",
+      "distance": "16,6km"
     },
     {
       "id": "22",
       "image": "/assets/products/product2.jpg",
       "name": "Dany",
       "product": "Maraicher",
-      "city": "Évran (22)"
+      "city": "Lanvallay (22)",
+      "link": "https://www.pimormaraicher.fr/",
+      "distance": "5,8km"
     },
     {
       "id": "23",
       "image": "/assets/products/product3.jpg",
       "name": "Dominique et Delphine",
       "product": "Poissonniers",
-      "city": "Broons (22)"
+      "city": "Broons (22)",
+      "link": "https://www.facebook.com/PoissonnerieBroons/",
+      "distance": "25,2km"
     },
     {
       "id": "24",
       "image": "/assets/products/product4.jpg",
       "name": "Karine",
-      "product": "Éleveuse de bovins charolais et de porcs",
-      "city": "Tinténiac (35)"
+      "product": "Éleveuse de bovins  Limousines et  Blondes d'Aquitaines et de porcs",
+      "city": "Pleslin-Trigavou (22)",
+      "link": "https://www.ferme-les-aubriais.com/",
+      "distance": "6,9km"
     },
     {
       "id": "25",
       "image": "/assets/products/product5.jpg",
       "name": "John",
       "product": "Fromager, crémier",
-      "city": "Dinan (22)"
+      "city": "Dinan (22)",
+      "link": "https://www.facebook.com/lafromageriedejulien",
+      "distance": "400m"
     },
     {
       "id": "26",
       "image": "/assets/products/product6.jpg",
       "name": "Cellie",
       "product": "Fruits et légumes bio",
-      "city": "Lanvallay (22)"
+      "city": "Trémeureuc (22)",
+      "link": "https://www.fermeducoin.fr/",
+      "distance": "14,7km"
     },
     {
       "id": "27",
       "image": "/assets/products/product7.jpg",
       "name": "Henrik",
       "product": "Éleveur de volailles",
-      "city": "Taden (22)"
+      "city": "Pleslin-Trigavou (22)",
+      "link": "https://fermedelapaumerais.fr/",
+      "distance": "8,5km"
     },
     {
       "id": "28",
       "image": "/assets/products/product8.jpg",
       "name": "Stéphanie",
       "product": "caviste",
-      "city": "Quévert (22)"
+      "city": "Dinan (22)",
+      "link": "https://www.grainsdevigne.fr/",
+      "distance": "220m"
     }
   ]
 }

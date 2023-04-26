@@ -113,7 +113,7 @@ function validateHour() {
 }
 function validateQuantity() {
   if (!quantity.value || quantity.value < 1) {
-    errorQuantity.textContent = "* Pour combien de personnes.";
+    errorQuantity.textContent = "* Pour combien de personnes?";
     return false;
   } else if (quantity.value > 50) {
     errorQuantity.textContent =
