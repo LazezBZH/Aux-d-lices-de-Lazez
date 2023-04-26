@@ -12,7 +12,7 @@ Thème: "RESTAURANT"
 - [Réalisation](#réalisation)
   - [Technos](#technos)
   - [Détails](#détails)
-- [Screenshots (in english)](#screenshots)
+- [Screenshots](#screenshots)
 - [Design](#design)
 - [La voir en action](#la-voir-en-action)
 - [Moi](#moi)
