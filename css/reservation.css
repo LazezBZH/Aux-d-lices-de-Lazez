@@ -1,3 +1,16 @@
+.home-resa {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 99;
+  background-color: transparent;
+  border: none;
+}
+
+.home-resa img {
+  max-width: 100px;
+  border-radius: 10px;
+}
 #dialog {
   width: 100vw;
   height: 100vh;

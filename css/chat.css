@@ -3,6 +3,8 @@
   left: 10px;
   bottom: 10px;
   z-index: 99;
+  background-color: transparent;
+  border: none;
 }
 .chat-pop {
   position: fixed;

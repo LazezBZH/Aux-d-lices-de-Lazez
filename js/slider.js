@@ -1,3 +1,5 @@
+// carousel page accueil
+
 (function () {
   myCarousel = function () {
     var carousel = {

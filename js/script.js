@@ -1,4 +1,4 @@
-// nav
+// nav classe active
 const links = document.querySelectorAll("nav a");
 const toggle = (e) => {
   links.forEach((link) => {

@@ -1,3 +1,5 @@
+// génération de la section "menu"
+
 function initMenu() {
   fetch("/menu.json")
     .then((response) => response.json())

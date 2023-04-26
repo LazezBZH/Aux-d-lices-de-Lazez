@@ -1,3 +1,5 @@
+// pour que le lien actif de la nav prenne la classe active au scroll
+
 const ratio = 0.2;
 
 const options = {

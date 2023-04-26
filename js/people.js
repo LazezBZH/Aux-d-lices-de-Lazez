@@ -1,3 +1,5 @@
+// génération dessection "équipe" et "fournisseurs"
+
 function initPeople() {
   fetch("/people.json")
     .then((response) => response.json())
@@ -12,6 +14,7 @@ function initPeople() {
     });
 }
 
+// équipe
 function renderStaffs(staffs) {
   const staffsSection = document.querySelector("#staffs");
 
@@ -25,12 +28,13 @@ function renderStaffs(staffs) {
     <figcaption>                        
     <h4 class="thumbnail-title" > ${staff.name}</h4>
     <p class="thumbnail-description " >${staff.job}</p>
-    <p class="devise">Devise: " ${staff.devise}"</p>
+    <p class="devises">Devise: <span class="devise">" ${staff.devise}"</span></p>
     </figcaption>
 </figure>
 `;
   }
 }
+// fournisseurs
 function renderProducts(products) {
   const productsSection = document.querySelector("#products");
 

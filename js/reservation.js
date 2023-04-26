@@ -1,3 +1,5 @@
+// réservation en ligne
+
 let errorFirstname = document.getElementById("error-firstname");
 let errorLastname = document.getElementById("error-lastname");
 let errorEmail = document.getElementById("error-email");

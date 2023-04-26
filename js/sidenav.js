@@ -1,3 +1,5 @@
+// nav burger en responsive
+
 let sidenav = document.getElementById("mySidenav");
 let openBtn = document.getElementById("openBtn");
 let closeBtn = document.getElementById("closeBtn");
