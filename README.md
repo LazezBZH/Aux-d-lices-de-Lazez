@@ -1,7 +1,11 @@
 # AUX DÉLICES DE LAZEZ
 
 ![screen4](./assets/design/4.png)
+
+
 Application réalisée dans le cadre du concours #6 du Designer du Web
+
+
 Thème: "RESTAURANT"
 
 - Le concours: [lien Youtube](https://youtu.be/oeM8Y7WTKW0)
@@ -17,7 +21,7 @@ Thème: "RESTAURANT"
 - [La voir en action](#la-voir-en-action)
 - [Moi](#moi)
 
-## Consignes (Discord)
+## Consignes
 
 > Votre travail doit être ORIGINAL et UNIQUE, autant au niveau du DESIGN que du CODE.
 > Aucune ressemblance avec quoique ce soit sur le web n'est tolérée, sous peine d'être exclu du concours.
@@ -70,7 +74,7 @@ Thème: "RESTAURANT"
 - Choix des couleurs principales: kaki or et anthracite
 - Une petite dose de vert et de rouge pour égayer
 - Effet parallax sur les fonds d'écran
-- personnalisation des couleurs des icônes
+- Personnalisation des couleurs des icônes
 
 ## La voir en action
 
