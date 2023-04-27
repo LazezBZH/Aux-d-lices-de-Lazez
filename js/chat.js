@@ -9,20 +9,16 @@ openChatBtn.addEventListener("click", openChatForm);
 closeChatBtn.addEventListener("click", closeChatForm);
 sendChatBtn.addEventListener("click", getMsg);
 consumerMsg.addEventListener("keydown", enter);
-
-document.addEventListener("mouseup", function (event) {
-  // var obj = document.getElementById("container");
-  if (!chat.contains(event.target)) {
-    closeChatForm();
-  }
-});
+document.addEventListener("mouseup", closeOnClicOut);
 
 // OUVERTURE CHAT
 function openChatForm() {
   chat.style.display = "block";
   openChatBtn.style.display = "none";
   sayHello();
-  consumerMsg.focus();
+  if (screen.width > 730) {
+    consumerMsg.focus();
+  }
 }
 // génération du message d'accueil une seule fois à l'ouverture du chat
 function once(fn, context) {
@@ -50,6 +46,11 @@ let sayHello = once(function () {
 function closeChatForm() {
   chat.style.display = "none";
   openChatBtn.style.display = "block";
+}
+function closeOnClicOut(e) {
+  if (!chat.contains(e.target)) {
+    closeChatForm();
+  }
 }
 
 // RÉCUPÉRATION DES MESSAGES CLIENTS
@@ -97,6 +98,8 @@ function displayFakeResponse() {
                         <p class="our-message">${fakeResponse[i]}</p>
                     </li>`;
     displayMsg.scrollTop = displayMsg.scrollHeight;
-    consumerMsg.focus();
+    if (screen.width > 730) {
+      consumerMsg.focus();
+    }
   }, 600);
 }

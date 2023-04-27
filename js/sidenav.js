@@ -3,8 +3,8 @@
 let sidenav = document.getElementById("mySidenav");
 let openBtn = document.getElementById("openBtn");
 let closeBtn = document.getElementById("closeBtn");
-let burgerLinks = document.querySelectorAll(".mySidenav li a");
 
+document.addEventListener("mouseup", closeOnClicOut);
 openBtn.addEventListener("click", openNav);
 closeBtn.addEventListener("click", closeNav);
 sidenav.addEventListener("click", closeNav);
@@ -15,4 +15,9 @@ function openNav() {
 
 function closeNav() {
   sidenav.classList.remove("active");
+}
+function closeOnClicOut(e) {
+  if (!sidenav.contains(e.target)) {
+    closeNav();
+  }
 }
