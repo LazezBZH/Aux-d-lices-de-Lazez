@@ -66,7 +66,7 @@ function getMsg() {
   if (consumerMsg.value != "") {
     let messageToWrite = consumerMsg.value;
     consumerMsg.value = "";
-    displayMsg.innerHTML += `<li class="user-said" id="${messageToWrite}"> <p class="you">Vous</p><p class="user-message">${messageToWrite}</p></li>`;
+    displayMsg.innerHTML += `<li class="user-said" id="${messageToWrite}"> <div class="you"><img src="/assets/icones/you.png" alt=""></div><p class="user-message">${messageToWrite}</p></li>`;
 
     displayMsg.scrollTop = displayMsg.scrollHeight;
     displayFakeResponse();
@@ -84,12 +84,12 @@ let fakeResponse = [
   "Saviez-vous que le temps de cuisson des oeufs durs est de 10 minutes?",
   "Chez Lazez, le client est roi, nous demandons donc à vôtre Majesté d'attendre quelques minutes qu'on puisse vous répondre.",
   "L'équipe de Lazez prend quelques jours de vacances et revient reposée pour vous répondre.",
-  ":)",
+  "&#127869; Nous passons bientôt à table 	&#129361 	&#129385; &#127856;",
 ];
 function displayFakeResponse() {
   setTimeout(function () {
     function getRandomInt() {
-      return (i = Math.floor(Math.random() * 9));
+      return (i = Math.floor(Math.random() * 10));
     }
     getRandomInt();
 

@@ -11,7 +11,7 @@
       "id": "12",
       "image": "/assets/entrees/entree2.jpg",
       "name": "Délice entre terre et mer",
-      "description": "Craquer au sarazin, fromage frais à l'ail des ours et saumon fumé",
+      "description": "Cracker au sarrasin, fromage frais à l'ail des ours et saumon fumé",
       "vege": " "
     },
     {
@@ -55,7 +55,7 @@
       "id": "23",
       "image": "/assets/plats/plat3.jpg",
       "name": "Méli mélo de légumes",
-      "description": "Cassolette de légumes du moment, cuisson 'secret du chef'",
+      "description": "Cassolette de légumes du moment, cuisson &#171;&#160;secret du chef&#160;&#187;",
       "vege": "Végétarien, Vegan"
     },
     {
@@ -91,8 +91,8 @@
     {
       "id": "33",
       "image": "/assets/desserts/dessert3.jpg",
-      "name": "Carpaccio de fruits",
-      "description": "Mandarines, kiwis et bananes dans leur lait de coco",
+      "name": "Carpacci'eau de fruits",
+      "description": "Mandarines, kiwis et bananes dans leur bain d'eau de coco",
       "vege": "Végétarien, Vegan"
     },
     {
